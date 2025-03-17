@@ -116,6 +116,20 @@ public class Cine {
 				+ ", precioEntrada=" + precioEntrada + "]";
 	}
 	
-		
-}
+	public int butacasLibres() {
+		return aforo - butacasOcupadas;
+	}
+	
+	public int porcentajeOcupacion() {
+		return (butacasOcupadas*100)/aforo;
+	}
 
+}
+	
+/* butacasLibres, devuelve el número de butacas libres
+ porcentajeOcupacion, devuelve el porcentaje de butacas ocupadas
+ ingresosSala, devuelve el precio de la entrada por las butacas ocupadas
+ vaciarSala, pone a cero las butacas ocupadas
+ venderEntrada, vende una entrada, una butaca ocupada más
+ devolverEntrada, devuelve una entrada, una butaca ocupada menos*/
+		
