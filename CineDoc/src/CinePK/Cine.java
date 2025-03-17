@@ -116,14 +116,36 @@ public class Cine {
 				+ ", precioEntrada=" + precioEntrada + "]";
 	}
 	
+	/**
+	 * Devuelve las butacas que no estén ocupadas
+	 * @return butacasLibres int
+	 */
 	public int butacasLibres() {
 		return aforo - butacasOcupadas;
 	}
 	
+	/**
+	 * Calcula el porcentaje de butacas ocupadas
+	 * @return porcentaje de ocupacion int
+	 */
 	public int porcentajeOcupacion() {
 		return (butacasOcupadas*100)/aforo;
 	}
 
+	/**
+	 * Calcula el ingreso total que se logra en esa sala
+	 * @return ingreso total int
+	 */
+	public int ingresosSala() {
+		return precioEntrada * butacasOcupadas;
+	}
+	
+	/**
+	 * Pone las butacas ocupadas a 0
+	 */
+	public void vaciarSala() {
+		butacasOcupadas = 0;
+	}
 }
 	
 /* butacasLibres, devuelve el número de butacas libres
