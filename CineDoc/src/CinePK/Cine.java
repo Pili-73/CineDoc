@@ -109,18 +109,13 @@ public class Cine {
 	public void setPrecioEntrada(int precioEntrada) {
 		this.precioEntrada = precioEntrada;
 	}
+
+	@Override
+	public String toString() {
+		return "Cine [aforo=" + aforo + ", butacasOcupadas=" + butacasOcupadas + ", tituloPelicula=" + tituloPelicula
+				+ ", precioEntrada=" + precioEntrada + "]";
+	}
 	
 		
 }
 
-/*Crea la clase Cine. La clase va a tener los siguientes atributos
- aforo, número de butacas del cine
- butacasOcupadas, número de butacas ocupadas
- tituloPelicula, nombre de la película
- precioEntrada, precio de la entrada
-Por defecto el aforo es de 100, las butacas ocupadas son 0 y el precio de la entrada son 5
-euros. El titulo por defecto es “Sin determinar”.
-Crea constructores para:
- ningún parámetro
- aforo
- aforo, titulo, precioEntrada*/
