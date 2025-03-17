@@ -146,6 +146,20 @@ public class Cine {
 	public void vaciarSala() {
 		butacasOcupadas = 0;
 	}
+	
+	/**
+	 * Añade una butaca ocupada
+	 */
+	public void venderEntrada() {
+		butacasOcupadas++;
+	}
+	
+	/**
+	 * Quita una butaca ocupada
+	 */
+	public void devolverEntrada() {
+		butacasOcupadas--;
+	}
 }
 	
 /* butacasLibres, devuelve el número de butacas libres
